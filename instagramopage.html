@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sala de conversa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+        <center>
+            <h1 class="header">
+                Chat
+                <sup>
+                    <img src="camera-icon.png">
+                </sup>
+            </h1>
+            <div id="output" style="text-align:left;margin-bottom:70px;"></div>
+        </center>
+    </div>
+    <center>
+        <div class="input_div_message_page">
+            <label>Enviar:</label>
+            <input type="text" class="form-control" id="msg" placeholder="Escreva sua mensagem para o Chat">
+            <button class="btn btn-success" style="width: 10%;height: 1%;" onclick="send()">
+                <img width="30" height="30" src="https://img.icons8.com/parakeet-line/48/sent.png" alt="sent"/>
+            </button>
+        </div>
+    </center>
+    <script src="instagramoPage.js"></script>
+</body>
+
+</html>
