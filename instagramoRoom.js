@@ -46,7 +46,7 @@ getData();
 function redirectToRoomName(name) {
   console.log(name);
   localStorage.setItem("roomName", name);
-  window.location = "instagramoPage.html";
+  window.location = "instagramopage.html";
 }
 
 function logout() {
